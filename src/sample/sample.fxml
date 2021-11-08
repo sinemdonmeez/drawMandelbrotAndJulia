@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="mandelbrot" layoutX="858.0" layoutY="14.0" mnemonicParsing="false" onAction="#resetAction" text="Mandelbrot" />
+      <Button fx:id="julia" layoutX="937.0" layoutY="14.0" mnemonicParsing="false" onAction="#juliaAction" text="Julia" />
+      <Button fx:id="rplus" layoutX="869.0" layoutY="60.0" mnemonicParsing="false" onAction="#rplusAction" text="R+" visible="false" />
+      <Button fx:id="rminus" layoutX="901.0" layoutY="60.0" mnemonicParsing="false" onAction="#rminusAction" text="R-" visible="false" />
+      <Button fx:id="iplus" layoutX="929.0" layoutY="60.0" mnemonicParsing="false" onAction="#iplusAction" text="I+" visible="false" />
+      <Button fx:id="iminus" layoutX="957.0" layoutY="60.0" mnemonicParsing="false" onAction="#iminusAction" text="I-" visible="false" />
+      <Label fx:id="label" layoutX="119.0" layoutY="944.0" prefHeight="17.0" prefWidth="708.0" text="z=" />
+      <ImageView fx:id="imageView" fitHeight="830.0" fitWidth="830.0" layoutX="48.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="tf" layoutX="802.0" layoutY="14.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label layoutX="655.0" layoutY="18.0" text="z^n+c için n değeri giriniz" />
+   </children>
+</AnchorPane>
